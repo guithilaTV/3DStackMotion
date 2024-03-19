@@ -66,7 +66,7 @@ body {
 @keyframes loaderAnim {
   to {
     opacity: 1;
-    transform: scale3d(0.5,0.5,1);
+    transform: scale3d(0.5, 0.5, 1);
   }
 }
 
@@ -166,7 +166,7 @@ a:focus-visible {
 }
 
 .frame__sub:hover::before,
-.frame__sub:focus::before  {
+.frame__sub:focus::before {
   content: '';
   position: absolute;
   width: 30px;
@@ -184,7 +184,7 @@ a:focus-visible {
 .modal {
   pointer-events: none;
   opacity: 0;
-  transform: translate3d(0,20px,0);
+  transform: translate3d(0, 20px, 0);
   position: absolute;
   bottom: 55px;
   right: 0px;
@@ -203,7 +203,7 @@ a:focus-visible {
 .frame__sub:focus .modal {
   pointer-events: auto;
   opacity: 1;
-  transform: translate3d(0px,0px,0px);
+  transform: translate3d(0px, 0px, 0px);
 }
 
 .frame__hire {
@@ -233,7 +233,7 @@ main {
 
 .intro__title {
   text-transform: uppercase;
-  font-size: clamp(2rem,7vw,8rem);
+  font-size: clamp(2rem, 7vw, 8rem);
   font-weight: 400;
   grid-area: intro-title;
   position: relative;
@@ -278,7 +278,7 @@ main {
 
 .outro__title {
   font-weight: 300;
-  font-size: clamp(1.5rem,10vw,2rem);
+  font-size: clamp(1.5rem, 10vw, 2rem);
 }
 
 .grid {
@@ -288,7 +288,7 @@ main {
   grid-area: intro-title;
   grid-row: 1 / span 3;
   display: grid;
-  grid-template-columns: repeat(3,auto);
+  grid-template-columns: repeat(3, auto);
   justify-content: center;
   gap: 3rem;
   filter: brightness(70%);
@@ -313,7 +313,7 @@ main {
 }
 
 .grid .card {
-   box-shadow: 0 2px 7px 0 rgba(0,0,0,0.8);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.8);
 }
 
 .card:nth-child(1n) {
@@ -340,7 +340,7 @@ main {
   --color-card: var(--color-card-6);
 }
 
-.card > * {
+.card>* {
   background-color: var(--color-bg-card-inner);
 }
 
@@ -388,9 +388,9 @@ main {
   justify-items: center;
 }
 
-.card--rel  {
+.card--rel {
   align-items: start;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .card--rel .card__img {
@@ -418,7 +418,7 @@ main {
   width: 100%;
   display: grid;
   place-items: center;
-  font-size: clamp(2rem,6vw,6rem);
+  font-size: clamp(2rem, 6vw, 6rem);
   line-height: 1;
   font-weight: 400;
   margin: 25vh auto 0;
@@ -456,6 +456,7 @@ main {
   body {
     --page-padding: 2rem;
   }
+
   .frame {
     position: fixed;
     top: 0;
@@ -467,33 +468,42 @@ main {
     align-content: space-between;
     grid-template-areas: 'title back archive sponsor' 'hire ... ... sub';
   }
+
   .frame__sub {
     justify-self: end;
   }
+
   .frame__title {
     padding-right: 4rem;
   }
+
   .frame__hire {
     align-self: end;
   }
+
   .modal {
     bottom: 50px;
     right: 50px;
   }
+
   .intro {
     grid-template-rows: 60vh 40vh auto;
   }
+
   .intro__title {
     align-self: end;
   }
+
   .grid {
     padding-top: 12vh;
   }
+
   .content {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
   }
+
   .card-wrap {
     grid-template-columns: repeat(2, 300px);
   }
